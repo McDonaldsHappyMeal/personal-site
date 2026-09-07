@@ -1,0 +1,8 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+<Layout title="Notes" description="My technical and mathematical notes.">
+  <header class="page-header"><p class="eyebrow">Notes</p><h1>Notes</h1><p>Informal reading notes, derivations, and explanations from things I'm learning right now.</p></header>
+  <section><h2>Topics</h2><div class="topics"><div><strong>Convex optimisation</strong></div><div><strong>Matrix analysis</strong></div><div><strong>Control</strong></div><div><strong>Probability</strong></div><div><strong>Robotics</strong></div><div><strong>Machine learning</strong></div></div></section>
+</Layout>
+<style>.eyebrow{color:var(--accent);font-family:var(--font-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}.page-header{margin-bottom:3rem}.page-header p:last-child{color:var(--text-muted)}.topics{display:grid;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:10px;overflow:hidden}.topics>div{padding:1.2rem;background:var(--bg-elevated)}@media(min-width:650px){.topics{grid-template-columns:1fr 1fr}}</style>

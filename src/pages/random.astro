@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+<Layout title="Random" description="A grab bag of things from me that may or may not be related to my work.">
+  <header class="page-header"><p class="eyebrow">Random</p><h1>Random</h1><p>A grab bag of things that may or may not be related to my work...</p></header>
+  <div class="card-grid">
+    <article class="card stat-card">
+      <span class="tag">TETR.IO</span>
+      <h3>52.37s</h3>
+      <p>Fastest 40 lines sprint clear. See my <a href="https://ch.tetr.io/u/jdls">TETR.IO profile</a>.</p>
+      <p class="stat-sub">Global rank #43,593 · top 0.45% of all TETR.IO accounts</p>
+    </article>
+    <article class="card stat-card">
+      <span class="tag">VALORANT</span>
+      <h3>Radiant</h3>
+      <p>Peak competitive rank, though I haven't played in many seasons... here's my <a href="https://tracker.gg/valorant/profile/riot/DADDYCHILL%23ODIN/overview?platform=pc&playlist=competitive">tracker.gg profile</a>.</p>
+      <p class="stat-sub">429 RR · Episode 5: Act I · ~top 0.05% of ranked players (approx.)</p>
+    </article>
+    <article class="card">
+      <p class="placeholder">[add something here]</p>
+    </article>
+  </div>
+</Layout>
+<style>
+  .eyebrow{color:var(--accent);font-family:var(--font-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}
+  .page-header{margin-bottom:3rem}
+  .page-header p:last-child{color:var(--text-muted)}
+
+  .card-grid{grid-template-columns:1fr}
+  @media(min-width:560px){.card-grid{grid-template-columns:repeat(2,1fr)}}
+
+  .stat-card .tag{margin-bottom:.7rem}
+  .stat-card h3{margin:0 0 .5rem;font-size:2rem;color:var(--accent)}
+  .stat-card p{margin:0;color:var(--text-muted);font-size:.95rem}
+  .stat-sub{margin-top:.35rem !important;color:var(--text-dim) !important;font-family:var(--font-mono);font-size:.78rem !important}
+
+  .placeholder{color:var(--text-dim);text-decoration:underline dotted;text-underline-offset:.2em}
+</style>
